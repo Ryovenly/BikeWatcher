@@ -28,8 +28,11 @@ namespace BikeWatcher.Controllers
             return View();
         }
 
-        public IActionResult Stations()
+        public async Task<IActionResult> StationsAsync()
         {
+            var Stations = await StationService.FindStations();
+            ViewBag.AllStation = Stations;
+
             return View();
         }
         public IActionResult Map()
