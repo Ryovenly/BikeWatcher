@@ -138,3 +138,4 @@ C:\Users\steve\Desktop\Cours\B2\.net\TP\BikeWatcher\BikeWatcher\bin\Debug\netcor
 C:\Users\steve\Desktop\Cours\B2\.net\TP\BikeWatcher\BikeWatcher\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\steve\Desktop\Cours\B2\.net\TP\BikeWatcher\BikeWatcher\obj\Debug\netcoreapp3.1\BikeWatcher.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\steve\Desktop\Cours\B2\.net\TP\BikeWatcher\BikeWatcher\obj\Debug\netcoreapp3.1\Razor\Views\Home\Stations.cshtml.g.cs
+C:\Users\steve\Desktop\Cours\B2\.net\TP\BikeWatcher\BikeWatcher\obj\Debug\netcoreapp3.1\Razor\Views\Home\Map.cshtml.g.cs
