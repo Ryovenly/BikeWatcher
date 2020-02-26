@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BikeWatcher.Models.Stations>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Favoris</h1>
+
+<p>
+    <a asp-action="Create">Ajouter une nouvelle station</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nom
+            </th>
+            <th>
+                Adresse
+            </th>
+            <th>
+                Villes
+            </th>
+            <th>
+                Vélos disponibles
+            </th>
+
+            <th>Modifier</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.commune)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.available_bikes)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

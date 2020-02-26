@@ -7,7 +7,7 @@ namespace BikeWatcher.Models
 {
     public class Stations
     {
-
+            public int id { get; set; }
             public string number { get; set; }
             public string pole { get; set; }
             public string available_bikes { get; set; }
