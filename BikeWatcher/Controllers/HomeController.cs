@@ -40,6 +40,16 @@ namespace BikeWatcher.Controllers
             var Stations = await StationService.FindStations();
             ViewBag.AllStation = Stations;
 
+            var cardsBdx = await StationService.StationBdx();
+
+            var ResultBdx = new List<Stations>();
+            foreach (var stationBdx in cardsBdx)
+            {
+                var construit = new Stations(stationBdx);
+                ResultBdx.Add(construit);
+            }
+
+            Stations.AddRange(ResultBdx);
             return View();
         }
         public IActionResult Favorites()
